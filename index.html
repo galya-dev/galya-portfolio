@@ -4,15 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GALYA SARIKAYA | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
-      background-color: #f9f9f9;
+      background: linear-gradient(to right, #f9f9f9, #e6f0ff);
       font-family: 'Segoe UI', sans-serif;
       color: #333;
       padding: 40px;
       line-height: 1.6;
+      max-width: 900px;
+      margin: auto;
     }
-    h1 {
+    h1, h2 {
       color: #4a90e2;
     }
     a {
@@ -23,12 +26,6 @@
     a:hover {
       text-decoration: underline;
     }
-    ul {
-      padding-left: 20px;
-    }
-    p {
-      max-width: 600px;
-    }
     .btn {
       background-color: #4a90e2;
       color: white;
@@ -36,26 +33,56 @@
       border-radius: 6px;
       text-decoration: none;
       display: inline-block;
-      margin-top: 15px;
+      margin: 10px 10px 0 0;
+      transition: background-color 0.3s;
     }
     .btn:hover {
       background-color: #357ABD;
     }
+    .icon-links a {
+      margin-right: 15px;
+      font-size: 20px;
+      color: #333;
+    }
+    .icon-links a:hover {
+      color: #4a90e2;
+    }
+    section {
+      margin-bottom: 40px;
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to my portfolio!</h1>
-  <p>I'm <strong>Galya Sarikaya</strong> — Certified Future AI Engineer 🧠</p>
 
-  <p>🚀 Explore my projects and certificates:</p>
-  <ul>
-    <li><a href="https://galya-dev.github.io/TECH-TRAINER-CERTIFICATES/">📜 Tech Certificates</a></li>
-    <li><a href="https://github.com/galya-dev/AI-Study-Buddy">🤖 AI Study Buddy</a></li>
-  </ul>
+  <section id="intro">
+    <h1>Welcome to my portfolio!</h1>
+    <p>I'm <strong>Galya Sarikaya</strong> — Certified Future AI Engineer 🧠</p>
+  </section>
 
-  <a href="cv-galya.pdf" class="btn" download>📄 Download My CV</a>
+  <section id="projects">
+    <h2>🚀 My Projects & Certificates</h2>
+    <ul>
+      <li><a href="https://galya-dev.github.io/TECH-TRAINER-CERTIFICATES/">📜 Tech Certificates</a></li>
+      <li><a href="https://github.com/galya-dev/AI-Study-Buddy">🤖 AI Study Buddy</a></li>
+    </ul>
+  </section>
 
-  <p>💌 Contact: <a href="mailto:devgalyas@gmail.com">devgalyas@gmail.com</a></p>
+  <section id="downloads">
+    <h2>📄 Downloads</h2>
+    <a href="cv-galya.pdf" class="btn" download>Download My CV</a>
+    <a href="prompt-certificate.pdf" class="btn" download>Prompt Certificate</a>
+    <a href="drone-certificate.pdf" class="btn" download>Drone Certificate</a>
+  </section>
+
+  <section id="contact">
+    <h2>💌 Contact</h2>
+    <p>Email me: <a href="mailto:devgalyas@gmail.com">devgalyas@gmail.com</a></p>
+
+    <div class="icon-links">
+      <a href="https://github.com/galya-dev" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/galya-sarikaya" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+
 </body>
 </html>
-
