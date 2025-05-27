@@ -4,16 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GALYA SARIKAYA | Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
-      background: linear-gradient(to right, #f9f9f9, #e6f0ff);
+      background-color: #f9f9f9;
       font-family: 'Segoe UI', sans-serif;
       color: #333;
       padding: 40px;
       line-height: 1.6;
-      max-width: 900px;
-      margin: auto;
     }
     h1, h2 {
       color: #4a90e2;
@@ -26,6 +23,12 @@
     a:hover {
       text-decoration: underline;
     }
+    ul {
+      padding-left: 20px;
+    }
+    p {
+      max-width: 600px;
+    }
     .btn {
       background-color: #4a90e2;
       color: white;
@@ -33,56 +36,62 @@
       border-radius: 6px;
       text-decoration: none;
       display: inline-block;
-      margin: 10px 10px 0 0;
-      transition: background-color 0.3s;
+      margin-top: 15px;
     }
     .btn:hover {
       background-color: #357ABD;
     }
-    .icon-links a {
-      margin-right: 15px;
-      font-size: 20px;
-      color: #333;
+
+    /* PROJECTS GALLERY STYLES */
+    #projects-gallery {
+      margin-top: 50px;
     }
-    .icon-links a:hover {
+    .project {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 700px;
+      margin-top: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .project img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .project h3 {
       color: #4a90e2;
-    }
-    section {
-      margin-bottom: 40px;
     }
   </style>
 </head>
 <body>
+  <h1>Welcome to my portfolio!</h1>
+  <p>I'm <strong>Galya Sarikaya</strong> — Certified Future AI Engineer 🧠</p>
 
-  <section id="intro">
-    <h1>Welcome to my portfolio!</h1>
-    <p>I'm <strong>Galya Sarikaya</strong> — Certified Future AI Engineer 🧠</p>
-  </section>
+  <p>🚀 Explore my projects and certificates:</p>
+  <ul>
+    <li><a href="https://galya-dev.github.io/TECH-TRAINER-CERTIFICATES/">📜 Tech Certificates</a></li>
+    <li><a href="https://github.com/galya-dev/AI-Study-Buddy">🤖 AI Study Buddy</a></li>
+  </ul>
 
-  <section id="projects">
-    <h2>🚀 My Projects & Certificates</h2>
-    <ul>
-      <li><a href="https://galya-dev.github.io/TECH-TRAINER-CERTIFICATES/">📜 Tech Certificates</a></li>
-      <li><a href="https://github.com/galya-dev/AI-Study-Buddy">🤖 AI Study Buddy</a></li>
-    </ul>
-  </section>
+  <a href="cv-galya.pdf" class="btn" download>📄 Download My CV</a>
 
-  <section id="downloads">
-    <h2>📄 Downloads</h2>
-    <a href="cv-galya.pdf" class="btn" download>Download My CV</a>
-    <a href="prompt-certificate.pdf" class="btn" download>Prompt Certificate</a>
-    <a href="drone-certificate.pdf" class="btn" download>Drone Certificate</a>
-  </section>
+  <p>💌 Contact: <a href="mailto:devgalyas@gmail.com">devgalyas@gmail.com</a></p>
 
-  <section id="contact">
-    <h2>💌 Contact</h2>
-    <p>Email me: <a href="mailto:devgalyas@gmail.com">devgalyas@gmail.com</a></p>
+  <!-- PROJECTS GALLERY START -->
+  <section id="projects-gallery">
+    <h2>🧠 Featured Projects</h2>
 
-    <div class="icon-links">
-      <a href="https://github.com/galya-dev" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/galya-sarikaya" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <div class="project">
+      <img src="ai-screenshot.png" alt="AI Study Buddy Screenshot" width="300" />
+      <h3>AI Study Buddy</h3>
+      <p>This Python-based AI tool helps students generate summaries, ask questions, and interact with AI like a smart tutor.</p>
+      <a href="https://github.com/galya-dev/AI-Study-Buddy" target="_blank" class="btn">🔗 View on GitHub</a>
     </div>
+
+    <!-- Add more projects below this line if needed -->
   </section>
+  <!-- PROJECTS GALLERY END -->
 
 </body>
 </html>
